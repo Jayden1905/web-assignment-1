@@ -11,6 +11,8 @@
 
   --primary-header-size: 1.8rem;
   --normal-font-size: 1.2rem;
+  --primary-header-mobile-size: 1.5rem;
+  --normal-font-mobile-size: 1rem;
 }
 
 html {
@@ -19,15 +21,13 @@ html {
   box-shadow: border-box;
 }
 
-.section-header {
-  font-size: var(--primary-header-size);
-  font-weight: bolder;
-  margin-bottom: 20px;
-  text-decoration: underline;
+#table-section {
+  overflow: scroll;
 }
 
-table {
+.table {
   border: 1px solid black;
+  width: 900px;
 }
 
 .table-header {
@@ -54,4 +54,18 @@ td {
 .name,
 .email {
   padding-right: 50px;
+}
+
+@media (max-width: 700px) {
+  .table-header {
+    font-size: var(--primary-header-mobile-size);
+  }
+
+  td {
+    font-size: var(--normal-font-mobile-size);
+  }
+
+  .table {
+    width: 750px;
+  }
 }
