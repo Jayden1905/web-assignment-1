@@ -1,0 +1,57 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --primary-header-size: 1.8rem;
+  --normal-font-size: 1.2rem;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  box-shadow: border-box;
+}
+
+.section-header {
+  font-size: var(--primary-header-size);
+  font-weight: bolder;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+table {
+  border: 1px solid black;
+}
+
+.table-header {
+  background-color: #deeaf6;
+  font-size: var(--primary-header-size);
+  font-weight: bolder;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+td {
+  font-size: var(--normal-font-size);
+}
+
+.stu-num {
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.name,
+.email {
+  padding-right: 50px;
+}
