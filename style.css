@@ -21,6 +21,11 @@ html {
   box-shadow: border-box;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 #table-section {
   overflow: scroll;
 }
@@ -85,6 +90,37 @@ td {
   white-space: pre;
 }
 
+.policies-header {
+  font-size: var(--primary-header-size);
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.policies-content {
+  font-size: var(--normal-font-size);
+  margin-top: 0;
+  padding: 0;
+  margin-left: 4rem;
+}
+
+.adviser-table {
+  border: 1px solid black;
+  width: 500px;
+  margin-left: 4rem;
+}
+
+.adviser-table td {
+  width: max-content;
+}
+
+.adviser-column h4,
+.adviser-column p {
+  padding: 0;
+  margin: 0;
+}
+
 @media (max-width: 700px) {
   .table-header {
     font-size: var(--primary-header-mobile-size);
@@ -115,5 +151,19 @@ td {
   .code {
     font-size: var(--normal-font-mobile-size);
     white-space: pre-line;
+  }
+
+  .policies-header {
+    font-size: var(--primary-header-mobile-size);
+  }
+
+  .policies-content {
+    font-size: var(--normal-font-mobile-size);
+    margin-left: 0;
+  }
+
+  .adviser-table {
+    width: 400px;
+    margin-left: 0;
   }
 }
