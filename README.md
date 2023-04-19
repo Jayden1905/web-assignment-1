@@ -2,5 +2,5 @@
 
 ## You need to install node on your computer in order to run this project then run the follow code in the root directory.
 
-`npm install 
+`npm install \n
 npm run vite`
