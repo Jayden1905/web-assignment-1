@@ -5,6 +5,7 @@ import './style.css'
 import './sections/table'
 import './sections/helloworld'
 import './sections/policies'
+import './sections/form'
 
 const date = document.getElementById('date')
 date.valueAsDate = new Date()
