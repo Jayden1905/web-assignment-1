@@ -1,7 +1,7 @@
 const formSection = document.getElementById('form-section')
 
 formSection.innerHTML = `
-    <form action="https://translate.google.com" method="get">
+    <form id="form" action="https://translate.google.com" method="get">
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" required> <br>
         <label for="module_code">Module Code:</label>
@@ -9,7 +9,7 @@ formSection.innerHTML = `
         <label for="date">Date:</label>
         <input type="date" name="date" id="date" disabled> <br>
 
-        <textarea rows="4" cols="10" name="text" placeholder="Hello Test 202304"></textarea>
+        <textarea rows="4" cols="10" name="text">Hello Test 202304</textarea>
 
         <br>
         Source language:
@@ -33,6 +33,7 @@ formSection.innerHTML = `
         <input type="radio" id="Korean" name="tl" value="ko">
         <label for="Korean">Korean</label> <br>
 
-        <input type="submit" value="Translate">
+        <button type="submit" value="Translate">Translate</button>
     </form>
+    <div id="error"></div>
 `
