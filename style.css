@@ -47,6 +47,10 @@ td {
   padding: 10px;
 }
 
+.border-none {
+  border: none !important;
+}
+
 td {
   font-size: var(--normal-font-size);
 }
