@@ -5,12 +5,18 @@ formSection.innerHTML = `
       <table>
         <tr>
           <td class="border-none">Name </td>
-          <td class="border-none"><input type="text" pattern="[A-Za-z0-9]+" name="username" id="username"
-              title="Must not contain special characters"></td>
+          <td class="border-none flex">
+            <input type="text" name="username" id="username" required
+              title="Must not contain special characters">
+            <p class="error-message" id="error-message-username"></p>
+          </input>
         </tr>
         <tr>
           <td class="border-none">Module Code</td>
-          <td class="border-none"><input type="text" pattern="^[A-Z][a-z][2-9]{3}$" name="module" id="username"></td>
+          <td class="border-none flex">
+            <input type="text" name="module" id="module">
+            <p class="error-message" id="error-message-module-code"></p>
+          </input>
         </tr>
         <tr>
           <td class="border-none">Current Date</td>
@@ -56,7 +62,7 @@ formSection.innerHTML = `
           </td>
         </tr>
         <tr>
-          <td class="border-none"><input type="submit" value="Translate"></td>
+          <td class="border-none"><input type="submit" value="Translate" ></input>
         </tr>
         <tr>
           <td class="border-none">

@@ -13,11 +13,18 @@ const replace = document.getElementById('replace')
 const changeBtn = document.getElementById('change')
 const changeCount = document.getElementById('changeCount')
 const resetBtn = document.getElementById('reset-btn')
+const userInput = document.getElementById('username')
+const moduleInput = document.getElementById('module')
+const userError = document.getElementById('error-message-username')
+const moduleError = document.getElementById('error-message-module-code')
+const form = document.getElementById('form')
 
 window.onload = showDate
 
 function resetForm() {
   document.getElementById('form').reset()
+  userError.innerHTML = ''
+  moduleError.innerHTML = ''
   setTimeout(function () {
     showDate()
   }, 0)
@@ -87,3 +94,29 @@ function showDate() {
   // Set the textbox value to the formatted date
   document.getElementById('Date').value = dateString
 }
+
+userInput.addEventListener('blur', (e) => {
+  const username = e.target.value
+
+  if (!/^[a-zA-Z0-9]+$/.test(username)) {
+    userError.innerHTML = 'Username must not contain special characters.'
+  } else {
+    userError.innerHTML = ''
+  }
+})
+
+moduleInput.addEventListener('blur', (e) => {
+  const moduleCode = e.target.value
+
+  if (!/^[A-Z][a-z][2-9]{3}$/.test(moduleCode) && moduleCode != '') {
+    moduleError.innerHTML = 'Invalid module code.'
+  } else {
+    moduleError.innerHTML = ''
+  }
+})
+
+form.addEventListener('submit', (e) => {
+  if (userError.innerHTML != '' || moduleError.innerHTML != '') {
+    e.preventDefault()
+  }
+})
