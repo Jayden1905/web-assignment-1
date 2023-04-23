@@ -56,10 +56,10 @@ changeBtn.addEventListener('click', () => {
 
 function showDate() {
   // Get the current date
-  var now = new Date()
+  const now = new Date()
 
   // Define arrays for month names and day names
-  var months = [
+  const months = [
     'January',
     'February',
     'March',
@@ -73,10 +73,10 @@ function showDate() {
     'November',
     'December',
   ]
-  var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+  const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
   // Format the date string
-  var dateString =
+  const dateString =
     months[now.getMonth()] +
     ' ' +
     now.getDate() +
