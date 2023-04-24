@@ -7,6 +7,7 @@ import './sections/helloworld'
 import './sections/policies'
 import './sections/form'
 
+// dom elements for the web page
 const message = document.getElementById('message')
 const find = document.getElementById('find')
 const replace = document.getElementById('replace')
@@ -25,9 +26,7 @@ function resetForm() {
   document.getElementById('form').reset()
   userError.innerHTML = ''
   moduleError.innerHTML = ''
-  setTimeout(function () {
-    showDate()
-  }, 0)
+  showDate()
 }
 
 resetBtn.addEventListener('click', () => {
@@ -73,6 +72,7 @@ function showDate() {
     'November',
     'December',
   ]
+
   const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
   // Format the date string
