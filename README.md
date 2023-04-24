@@ -13,3 +13,9 @@ npm run dev
 yarn
 yarn dev
 ```
+
+### After that you will get the localhost port number you can copy and paste in the browser window
+
+```
+e.g. "http://localhost:5173/"
+```
